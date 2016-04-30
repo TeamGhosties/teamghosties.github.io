@@ -1,6 +1,44 @@
+::-webkit-scrollbar {
+       background-color: #111111;
+       width: 10px;
+       height: 10px;
+   }
+
+   ::-webkit-scrollbar-thumb {
+       background-color: #666;
+   }
+
+   ::-webkit-scrollbar-thumb:hover {
+       background-color: #999;
+       border-radius: 3px;
+   }
+
+   ::-webkit-scrollbar-thumb:active {
+       background-color: #ccc;
+       border-radius: 5px;
+   }
+
+   ::-webkit-scrollbar-corner {
+       color: #666;
+   }
+
+   p, a, h4, h5, h6 {
+     font-family: 'Montserrat';
+     font-weight: 300;
+   }
+
+   h1, h2, h3 {
+     font-family: 'Bitter';
+   }
+
+   a {
+     transition: all 150ms linear;
+   }
+
 body {
   padding-top: 50px;
 }
+
 .starter-template {
   padding: 40px 15px;
   text-align: center;
@@ -39,4 +77,97 @@ body {
   margin-top: 25%;
   margin-bottom: 25%;
   transition: all 1s;
+}
+
+ul.nav li:after {
+    height: 0px;
+    width: 100%;
+    content:"";
+    display: block;
+    background-color: #00bc8c;
+    transition: 0.25s ease-out;
+  }
+
+ul.nav > li:hover:after {
+  height: 50px;
+  margin-top: -50px;
+}
+
+ul.nav > li.no-hover:hover:before {
+height: inherit;
+margin-bottom: inherit;
+}
+
+@media screen and (max-width:770px) {
+ul.nav > li:hover:before {
+ height: inherit;
+ margin-bottom: inherit;
+}
+}
+
+.navbar {
+  background-color: white;
+}
+
+span.icon-bar {
+  border: 1px solid black;
+}
+
+::selection {
+  background-color: #00bc8c;
+  color: white;
+}
+
+::moz-selection {
+  background-color: #00bc8c;
+  color: white;
+}
+
+.section-title {
+  font-size: 66px;
+  color: white;
+  font-weight: 800;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  margin: auto;
+  margin-top: 60px;
+}
+
+@media screen and (max-width: 1200px) {
+  .section-title {
+    font-size: 55px;
+    margin-top: 70px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .section-title {
+    font-size: 44px;
+    margin-top: 80px;
+  }
+}
+
+@media screen and (max-width: 692px) {
+  .section-title {
+    margin-top: 45px;
+  }
+}
+
+@media screen and (max-width: 499px) {
+  .section-title {
+    margin-top: 25px;
+  }
+}
+
+.sts {
+  height: 200px;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.about-title {
+  background-image: url(file:///C:/Users/Micah/Desktop/teamghosties.github.io/img/about.png);
 }
