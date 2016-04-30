@@ -185,3 +185,23 @@ span.icon-bar {
 .about-title {
   background-image: url(/img/about.png);
 }
+
+.devinfo {
+  height: 150px;
+  transition: all 150ms linear;
+}
+
+.devinfo:hover {
+  background-color: #00bc8c;
+  border-radius: 15px;
+}
+
+@media screen and (max-width: 992px) {
+  .devinfo {
+    height: inherit;
+  }
+
+  .devinfo:hover {
+    background-color: transparent;
+  }
+}
