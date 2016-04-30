@@ -6,36 +6,29 @@ body {
   text-align: center;
 }
 
-.footer {
-    width: 100%;
-    position: absolute;
-    margin: 0px;
-    top: 90%;
-    text-align: center;
-}
-
-.work-item {
-  height: 100px;
-}
-
 @keyframes work-hover {
   from {
     background-color: transparent;
+    border-radius: 0px;
   }
   to {
-    background-color: gray;
+    background-color: #00bc8c;
+    border-radius: 15px;
   }
 }
 
 .work-item:hover {
-  background-color: gray;
+  background-color: #00bc8c;
+  color: white;
   animation-name: work-hover;
   animation-duration: 2s;
-  transition: height 1s;
+  transition: all 1s;
+  border-radius: 15px;
 }
 
 .work-item a {
-  color: black;
+  cursor: pointer;
+  color: white;
   text-decoration: none;
   font-size: large;
   text-align: center;
@@ -45,5 +38,5 @@ body {
   margin: auto;
   margin-top: 25%;
   margin-bottom: 25%;
-  transition: height 1s;
+  transition: all 1s;
 }
