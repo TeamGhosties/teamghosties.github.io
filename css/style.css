@@ -188,6 +188,7 @@ span.icon-bar {
 
 .devinfo {
   height: 150px;
+  margin-top: 20px;
   transition: all 150ms linear;
 }
 
@@ -199,6 +200,7 @@ span.icon-bar {
 @media screen and (max-width: 992px) {
   .devinfo {
     height: inherit;
+    margin-top: 0px;
   }
 
   .devinfo:hover {
