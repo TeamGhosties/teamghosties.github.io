@@ -93,15 +93,15 @@ ul.nav > li:hover:after {
   margin-top: -50px;
 }
 
-ul.nav > li.no-hover:hover:before {
+ul.nav > li.no-hover:hover:after {
 height: inherit;
-margin-bottom: inherit;
+margin-top: inherit;
 }
 
 @media screen and (max-width:770px) {
-ul.nav > li:hover:before {
+ul.nav > li:hover:after {
  height: inherit;
- margin-bottom: inherit;
+ margin-top: inherit;
 }
 }
 
