@@ -55,16 +55,7 @@ body {
   }
 }
 
-.work-item:hover {
-  background-color: #00bc8c;
-  color: white;
-  animation-name: work-hover;
-  animation-duration: 2s;
-  transition: all 1s;
-  border-radius: 15px;
-}
-
-.work-item a {
+/*.work-item a {
   cursor: pointer;
   color: white;
   text-decoration: none;
@@ -77,6 +68,46 @@ body {
   margin-top: 25%;
   margin-bottom: 25%;
   transition: all 1s;
+}
+
+.work-item:hover {
+  background-color: #00bc8c;
+  color: white;
+  animation-name: work-hover;
+  animation-duration: 2s;
+  transition: all 1s;
+  border-radius: 15px;
+}*/
+
+.work-item {
+  height: 100%;
+  margin-top: 20px;
+  transition: all 150ms linear;
+  cursor: pointer;
+  font-size: large;
+  text-align: center;
+}
+
+.work-item:hover {
+  background-color: #00bc8c;
+  border-radius: 15px;
+  color: white;
+}
+
+.work-link {
+  display: inline-block;
+  margin: auto;
+  margin-top: 25%;
+  margin-bottom: 25%;
+}
+
+.work-link > a {
+  color: #333;
+}
+
+.work-link > a:hover {
+  color: white;
+  text-decoration: none;
 }
 
 .nav>li>a:focus, .nav>li>a:hover {
@@ -186,6 +217,10 @@ span.icon-bar {
   background-image: url(/img/about.png);
 }
 
+.work-title {
+  background-image: url(/img/work.png);
+}
+
 .devinfo {
   height: 150px;
   margin-top: 20px;
@@ -195,6 +230,7 @@ span.icon-bar {
 .devinfo:hover {
   background-color: #00bc8c;
   border-radius: 15px;
+  color: white;
 }
 
 @media screen and (max-width: 992px) {
@@ -205,5 +241,6 @@ span.icon-bar {
 
   .devinfo:hover {
     background-color: transparent;
+    color: inherit;
   }
 }
