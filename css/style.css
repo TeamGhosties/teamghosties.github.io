@@ -82,6 +82,7 @@ body {
 .work-item {
   height: 100%;
   margin-top: 20px;
+  margin-bottom: 20px;
   transition: all 150ms linear;
   cursor: pointer;
   font-size: large;
@@ -224,6 +225,7 @@ span.icon-bar {
 .devinfo {
   height: 150px;
   margin-top: 20px;
+  margin-bottom: 20px;
   transition: all 150ms linear;
 }
 
