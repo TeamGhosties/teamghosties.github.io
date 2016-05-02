@@ -222,6 +222,30 @@ span.icon-bar {
   background-image: url(/img/work.png);
 }
 
+.pricing-title {
+  background-image: url(/img/pricing.png);
+}
+
+#pricing-body {
+  margin-top: 20px;
+}
+
+.panel-pricing {
+  border-color: #00bc8c;
+  border-width: 3px;
+}
+
+.panel-pricing .panel-heading {
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
+  border-color: #00bc8c;
+  background-color: #00bc8c;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+}
+
 .devinfo {
   height: 150px;
   margin-top: 20px;
