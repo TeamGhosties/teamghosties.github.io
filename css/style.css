@@ -286,3 +286,7 @@ span.icon-bar {
     color: inherit;
   }
 }
+
+nav {
+    background: white;
+}
