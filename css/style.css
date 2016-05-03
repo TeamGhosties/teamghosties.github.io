@@ -90,39 +90,12 @@ body {
   list-style-type: none;
 }
 
-.tabs li {
-  padding: 10px;
-}
+/*.tab-content {
+  margin-bottom: 220px;
+}*/
 
-.tabs li a:hover, .tabs li a.toggled {
-  color: white;
-  text-decoration: none;
-}
-
-.tabs li {
-  background-color: #eee;
-}
-
-.tabs li.toggled {
+.work-item:hover {
   background-color: #00bc8c;
-}
-
-.t-left {
-  border-top-left-radius: 15px;
-  border-bottom-left-radius: 15px;
-}
-
-.t-right {
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
-}
-
-.work-item:hover, .tabs li:hover {
-  background-color: #00bc8c;
-  color: white;
-}
-
-.tabs li:hover a {
   color: white;
 }
 
@@ -146,11 +119,11 @@ body {
   text-decoration: none;
 }
 
-.nav>li>a:focus, .nav>li>a:hover {
+.nav:not(.nav-tabs)>li>a:focus, .nav:not(.nav-tabs)>li>a:hover {
   background-color: transparent;
 }
 
-ul.nav li:after {
+ul.nav:not(.nav-tabs) li:after {
     height: 0px;
     width: 100%;
     content:"";
@@ -159,29 +132,29 @@ ul.nav li:after {
     transition: 0.25s ease-out;
   }
 
-ul.nav > li:hover:after {
+ul.nav:not(.nav-tabs) > li:hover:after {
   height: 50px;
   margin-top: -50px;
 }
 
-ul.nav > li.no-hover:hover:after {
+ul.nav:not(.nav-tabs) > li.no-hover:hover:after {
 height: inherit;
 margin-top: inherit;
 }
 
 @media screen and (max-width:770px) {
-ul.nav > li:hover:after {
+ul.nav:not(.nav-tabs) > li:hover:after {
  height: inherit;
  margin-top: inherit;
 }
 }
 
-ul.nav > li > a:hover {
+ul.nav:not(.nav-tabs) > li > a:hover {
   color: white;
 }
 
 @media screen and (max-width: 770px) {
-  ul.nav > li > a:hover {
+  ul.nav:not(.nav-tabs) > li > a:hover {
     color: inherit;
   }
 }
@@ -194,7 +167,7 @@ ul.nav > li > a:hover {
 
 }
 
-.navbar {
+.nav:not(.nav-tabs)bar {
   background-color: white;
 }
 
