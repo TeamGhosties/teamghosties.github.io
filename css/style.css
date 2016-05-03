@@ -79,7 +79,7 @@ body {
   border-radius: 15px;
 }*/
 
-.work-item {
+.work-item, .tabs li {
   height: 100%;
   margin-top: 20px;
   margin-bottom: 20px;
@@ -87,12 +87,47 @@ body {
   cursor: pointer;
   font-size: large;
   text-align: center;
+  list-style-type: none;
+}
+
+.tabs li {
+  padding: 10px;
+}
+
+.tabs li a:hover, .tabs li a.toggled {
+  color: white;
+  text-decoration: none;
+}
+
+.tabs li {
+  background-color: #eee;
+}
+
+.tabs li.toggled {
+  background-color: #00bc8c;
+}
+
+.t-left {
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+.t-right {
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.work-item:hover, .tabs li:hover {
+  background-color: #00bc8c;
+  color: white;
+}
+
+.tabs li:hover a {
+  color: white;
 }
 
 .work-item:hover {
-  background-color: #00bc8c;
   border-radius: 15px;
-  color: white;
 }
 
 .work-link {
@@ -149,6 +184,14 @@ ul.nav > li > a:hover {
   ul.nav > li > a:hover {
     color: inherit;
   }
+}
+
+.hidden {
+  display: none;
+}
+
+.tabs {
+
 }
 
 .navbar {
