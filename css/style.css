@@ -290,3 +290,22 @@ span.icon-bar {
 nav {
     background: white;
 }
+
+.nav-tabs > li {
+  width: 50%;
+  text-align: center;
+}
+
+.nav-tabs {
+  border: none;
+}
+
+.nav-tabs > li > a {
+  border: none !important;
+}
+
+.nav-tabs > li.active > a {
+  color: white !important;
+  background-color: #00bc8c !important;
+  border: none !important;
+}
