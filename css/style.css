@@ -298,6 +298,7 @@ nav {
 
 .nav-tabs {
   border: none;
+  margin-top: 20px;
 }
 
 .nav-tabs > li > a {
