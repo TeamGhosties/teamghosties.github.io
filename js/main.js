@@ -8,7 +8,9 @@ $(document).ready(function() {
   $("#contact-form").submit(function(e) {
     e.preventDefault();
     $.post("https://formspree.io/teamghosties@gmail.com", $(this).serialize());
-    $("#contact-form").remove();
-    $("#contact-container").html("<h4>Thank you for contacting us</h4>")
+    $("#contact-form").slideUp(function() {
+      $(this).remove();
+      $("#contact-container").html("<h4>Thank you for contacting us</h4>")
+    });
   })
 })

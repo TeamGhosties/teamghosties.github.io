@@ -287,6 +287,10 @@ span.icon-bar {
   }
 }
 
+#contact-container {
+  margin-bottom: 50px;
+}
+
 #contact-form {
   margin-top: 20px;
 }
