@@ -335,3 +335,39 @@ nav {
   background-color: #00bc8c !important;
   border: none !important;
 }
+
+i.fa {
+  color: #222;
+  transition: all 150ms linear;
+}
+
+i.fa:hover {
+  color: #666;
+}
+
+.skype-contact {
+  text-align: center;
+  width: 120px;
+}
+
+.form-contacts {
+  width: 50%;
+  float: left;
+}
+
+.skype-contacts {
+  width: 50%;
+  float: right;
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 992px) {
+  .form-contacts, .skype-contacts {
+    width: 100%;
+    float: none;
+  }
+
+  .skype-contact {
+    width: 100%;
+  }
+}
