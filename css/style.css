@@ -287,6 +287,10 @@ span.icon-bar {
   }
 }
 
+#contact-form {
+  margin-top: 20px;
+}
+
 #contact-form > div > * {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
