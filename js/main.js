@@ -8,7 +8,7 @@ $(document).ready(function() {
   $("#contact-form").submit(function(e) {
     e.preventDefault();
     $.post("https://formspree.io/teamghosties@gmail.com", $(this).serialize());
-    $("#contact-modal").modal("hide").children().remove()
-    $("#contact-modal").html("<div class=\"modal-dialog\"><div class=\"modal-content\" style=\"padding: 5px;\">Please only submit once</div></div>");
+    $("#contact-form").remove();
+    $("#contact-container").html("<h4>Thank you for contacting us</h4>")
   })
 })

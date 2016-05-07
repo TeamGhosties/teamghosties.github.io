@@ -190,8 +190,29 @@
 	</div>
 </section>
 <section style="margin-bottom: 20px" id="contact-body">
-	<div class="container">
-		<h2 style="cursor: pointer; color: #00bc8c;" data-toggle="modal" data-target="#contact-modal">Click Here to Contact</h2>
+	<div class="container" id="contact-container">
+		<form id="contact-form">
+			<div class="input-group">
+				<input class="form-control" type="text" placeholder="Subject" name="_subject"/>
+			</div>
+
+			<div class="input-group">
+				<input class="form-control" type="text" placeholder="Your name" name="name">
+			</div>
+
+			<div class="input-group">
+				<input class="form-control" type="text" name="_replyto" placeholder="Your email" />
+			</div>
+
+			<div class="input-group">
+				<textarea class="form-control" name="Message" cols="60" rows="6" placeholder="Message" required></textarea>
+			</div>
+
+			<div class="input-group">
+				<input class="btn btn-primary" type="submit" value="Send">
+			</div>
+			<input type="text" name="_gotcha" style="display:none" />
+		</form>
 	</div>
 </section>
 
@@ -203,40 +224,6 @@
 			</div>
 		</div>
 
-		<div class="modal fade" id="contact-modal" tabindex="-1" role="dialog">
-			<div class="modal-dialog">
-				<div class="modal-content">
-					<div class="modal-header">
-						<h4 class="modal-title">Contact Us</h4>
-					</div>
-
-					<div class="modal-body">
-						<form id="contact-form">
-							<div class="input-group">
-								<input class="form-control" type="text" placeholder="Subject" name="_subject"/>
-							</div>
-
-							<div class="input-group">
-								<input class="form-control" type="text" placeholder="Your name" name="name">
-							</div>
-
-							<div class="input-group">
-								<input class="form-control" type="text" name="_replyto" placeholder="Your email" />
-							</div>
-
-							<div class="input-group">
-								<textarea class="form-control" name="Message" cols="60" rows="6" placeholder="Message" required></textarea>
-							</div>
-
-							<div class="input-group">
-								<input class="btn btn-primary" type="submit" value="Send">
-							</div>
-							<input type="text" name="_gotcha" style="display:none" />
-						</form>
-					</div>
-				</div>
-			</div>
-		</div>
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 		<script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
