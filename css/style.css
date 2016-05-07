@@ -287,6 +287,23 @@ span.icon-bar {
   }
 }
 
+#contact-form > div > * {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.btn-primary {
+  background-color: #00bc8c;
+  border-color: #00bc8c;
+}
+
+.btn-primary:hover, .btn-primary:focus, .brn-primary:active {
+  background-color: #009a6a;
+  border-color: #009a6a;
+}
+
 nav {
     background: white;
 }

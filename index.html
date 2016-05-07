@@ -97,11 +97,6 @@
 			<a>MedievalKits</a>
 			</div>
 		</div>
-		<!--<div class="col-md-2 work-item">
-			<div class="work-link">
-			<a href="#">SJST</a>
-			</div>
-		</div>-->
 	</div>
 </div>
 <div role="tabpanel" class="tab-pane" id="MicahChu">
@@ -194,66 +189,51 @@
 		<h1 class="section-title">Contact Us</h1>
 	</div>
 </section>
-<section id="contact-body">
+<section style="margin-bottom: 20px" id="contact-body">
 	<div class="container">
-		<p>You can contact us by emailing us <a href="mailto:teamghosties@gmail.com">Here</a></p>
+		<h2 style="cursor: pointer; color: #00bc8c;" data-toggle="modal" data-target="#contact-modal">Click Here to Contact</h2>
 	</div>
 </section>
-		<!--<div id="about" class="container">
-			<h1>Ghosties Development Services</h1>
-			<h4>56awesome56</h4>
-      <p>I am a 15 year old developer. I have almost a year and a half of experience with bukkit and spigot.</p>
-      <h4>MicahChu</h4>
-      <p>Description here Description here Description Here</p>
-
-		</div>
-    <br>
-		<div id="pricing" class="container">
-			<h1>Pricing</h1>
-      <h3>Plugins</h3>
-			<p>
-				Usually $5-15 for small plugins. Cost will increase depending on complexity. Contact me for a price estimate.
-			</p>
-      <h3>Other stuff</h3>
-      <p>Text here</p>
-		</div>
-    <br>
-		<div id="tos" class="container">
-			<h1>Terms of Service</h1>
-			<p>
-				<ul>
-					<li>You pay $5 upfront, or $2.50 if less.</li>
-					<li>If you don't pay, or don't pay the full price, I can do whatever I want with the plugin</li>
-				</ul>
-			</p>
-		</div>
-    <br>
-		<div id="contact" class="container">
-			<h1>Contact</h1>
-			<p>
-				You can contact us on skype(n56awesome56), or on <a href="https://www.spigotmc.org/members/56awesome56.41045/">Spigot</a>
-			</p>
-		</div>
-    <br>
-		<div id="work" class="container">
-			<h1>Previous Work</h1>
-			<div id="row work-area">
-				<div class="col-md-2 work-item">
-					<a href="https://www.spigotmc.org/resources/bungeemsg.18124/">BungeeMSG</a>
-				</div>
-				<div class="col-md-2 work-item">
-					<a href="https://www.spigotmc.org/resources/tabheader.6365/">TabHeader</a>
-				</div>
-				<div class="col-md-2 work-item">
-					<a data-toggle="modal" data-target="#server-modal">MedievalKits</a>
-				</div>
-			</div>
-		</div> -->
 
 		<div class="modal fade" id="server-modal" tabindex="-1" role="dialog">
 			<div class="modal-dialog">
 				<div class="modal-content">
 					<h1 style="padding: 20px">Server IP: play.medievalkits.us</h1>
+				</div>
+			</div>
+		</div>
+
+		<div class="modal fade" id="contact-modal" tabindex="-1" role="dialog">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h4 class="modal-title">Contact Us</h4>
+					</div>
+
+					<div class="modal-body">
+						<form id="contact-form">
+							<div class="input-group">
+								<input class="form-control" type="text" placeholder="Subject" name="_subject"/>
+							</div>
+
+							<div class="input-group">
+								<input class="form-control" type="text" placeholder="Your name" name="name">
+							</div>
+
+							<div class="input-group">
+								<input class="form-control" type="text" name="_replyto" placeholder="Your email" />
+							</div>
+
+							<div class="input-group">
+								<textarea class="form-control" name="Message" cols="60" rows="6" placeholder="Message" required></textarea>
+							</div>
+
+							<div class="input-group">
+								<input class="btn btn-primary" type="submit" value="Send">
+							</div>
+							<input type="text" name="_gotcha" style="display:none" />
+						</form>
+					</div>
 				</div>
 			</div>
 		</div>
